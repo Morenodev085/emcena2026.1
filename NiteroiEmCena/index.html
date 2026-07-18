@@ -3,11 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niteroi em cena </title>
+    <title>19° Niterói em Cena</title>
+    
+    <!-- Última versão do Tailwind v4 via CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    <!-- Configuração das suas cores customizadas no motor do Tailwind v4 -->
+    <style type="text/tailwindcss">
+        @theme {
+          --color-azul-petroleo: #06616D;
+          --color-azul-marinho: #042C4D;
+          --color-verde-floresta: #115933;
+          --color-verde-musgo: #6E842C;
+          --color-amarelo-ouro: #EBAA18;
+          --color-laranja-queimado: #D67C21;
+          --color-rosa-coral: #E9555E;
+          --color-bege-claro: #F7E7CE;
+        }
+    </style>
 </head>
-<body>
-    <header>
+<body class="bg-azul-marinho text-bege-claro antialiased font-sans flex justify-center items-start min-h-screen p-4 pt-20">
+
+    <!-- ==================== BARRA FLUTUANTE ==================== -->
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[70%] h-8 bg-azul-petroleo border border-verde-musgo rounded-full grid grid-cols-3 px-4 shadow-lg z-50">
+        <div></div>
+        <div class="flex items-center justify-center h-full">
+            <img src="SUA-IMAGEM-GIGANTE.png" alt="Logo Niterói em Cena" class="max-h-6 max-w-[120px] w-auto h-auto object-contain" />
+        </div>
+        <div class="flex items-center justify-end gap-4 text-xs">
+            <a href="#" class="text-bege-claro hover:text-amarelo-ouro transition-colors">Festival</a>
+        </div>
+    </nav>
+
+    <!-- ==================== SESSÃO ÚNICA DO FESTIVAL ==================== -->
+    <main class="w-full max-w-4xl bg-azul-petroleo border-2 border-verde-musgo rounded-3xl p-6 md:p-10 shadow-2xl text-center mb-8">
         
-    </header>
+        <!-- Cabeçalho do Festival -->
+        <span class="text-amarelo-ouro font-bold tracking-widest text-sm uppercase block mb-2">Inscrições Abertas</span>
+        <h1 class="text-3xl md:text-5xl font-black text-bege-claro tracking-tight mb-6">
+            19° Niterói em Cena
+        </h1>
+
+        <!-- SEÇÃO DO TEXTO DIRETO (Sem limites de altura e sem barra de rolagem) -->
+        <div class="mb-8 text-left text-sm md:text-base text-bege-claro/90 bg-azul-marinho/40 p-4 md:p-6 rounded-xl border border-verde-musgo/30 space-y-4">
+            <p>
+                Estão abertas as inscrições para a MOSTRA ESTUDANTIL e para a MOSTRA CENAS CURTAS do 19° Niterói em Cena, que será realizado entre 11 e 27 de setembro de 2026.
+            </p>
+            <p>
+                A MOSTRA ESTUDANTIL ocorrerá no Centro Cultural Calby Peixoto, nos dias 15, 16 e 17 de setembro, nos turnos da manhã e tarde. Podem participar escolas públicas e privadas do ensino básico e cursos livres de teatro do estado do Rio de Janeiro. Serão selecionadas, pelo menos, 70 cenas de até 8 minutos.
+            </p>
+            <p>
+                A MOSTRA CENAS CURTAS também ocorrerá no Centro Cultural Calby Peixoto, nos dias 22, 23 e 24 de setembro. Serão selecionadas 15 cenas. Cada uma receberá um cachê de participação de R$ 2.000,00, além de concorrer ao Prêmio Júri Popular, que acrescentará R$ 2.000,00 ao valor do cachê da cena premiada (baixe o Regulamento)
+            </p>
+            <p class="font-semibold text-amarelo-ouro">
+                As inscrições para as duas mostras são GRATUITAS. Basta preencher o formulário desejado, clicando no botão abaixo.
+            </p>
+            <div class="pt-2 border-t border-verde-musgo/20 text-xs md:text-sm">
+                <p class="font-bold text-laranja-queimado uppercase tracking-wider mb-1">PRAZOS PARA SE INSCREVER:</p>
+                <p>• Mostra Cenas Curtas - até 03 de agosto</p>
+                <p>• Mostra Estudantil - até 17 de agosto</p>
+            </div>
+        </div>
+
+        <!-- Container das Duas Mostras com os Títulos Combinando com os Botões -->
+        <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            
+            <!-- Bloco Mostra Estudantil (Rosa Coral) -->
+            <div class="bg-azul-marinho border border-verde-musgo p-5 rounded-2xl flex flex-col gap-3">
+                <h2 class="text-base font-bold text-rosa-coral uppercase tracking-wider mb-1">Mostra Estudantil</h2>
+                <button class="w-full bg-rosa-coral hover:bg-laranja-queimado text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer uppercase">
+                    Edital
+                </button>
+                <button class="w-full border border-rosa-coral text-rosa-coral hover:bg-rosa-coral hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all cursor-pointer uppercase">
+                    Inscreva-se aqui
+                </button>
+            </div>
+
+            <!-- Bloco Mostra Cenas Curtas (Verde Floresta) -->
+            <div class="bg-azul-marinho border border-verde-musgo p-5 rounded-2xl flex flex-col gap-3">
+                <h2 class="text-base font-bold text-verde-floresta uppercase tracking-wider mb-1">Mostra Cenas Curtas</h2>
+                <button class="w-full bg-verde-floresta hover:bg-verde-musgo text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer uppercase">
+                    Regulamento
+                </button>
+                <button class="w-full border border-verde-floresta text-verde-floresta hover:bg-verde-floresta hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all cursor-pointer uppercase">
+                    Inscreva-se aqui
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
 </body>
 </html>
