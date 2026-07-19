@@ -16,8 +16,8 @@
           --color-verde-floresta: #115933;
           --color-verde-musgo: #6E842C;
           --color-amarelo-ouro: #EBAA18;
-          --color-laranja-queimado: #D67C21; /* Usado como o tom Salmão */
-          --color-rosa-coral: #E9555E;       /* Usado como o tom Rosa */
+          --color-salmao: #D67C21; 
+          --color-rosa: #E9555E;       
           --color-bege-claro: #F7E7CE;
         }
     </style>
@@ -28,7 +28,7 @@
     <nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[70%] h-8 bg-azul-petroleo border border-verde-musgo rounded-full grid grid-cols-3 px-4 shadow-lg z-50">
         <div></div>
         <div class="flex items-center justify-center h-full">
-            <img src="SUA-IMAGEM-GIGANTE.png" alt="Logo Niterói em Cena" class="max-h-6 max-w-[120px] w-auto h-auto object-contain" />
+            <img src="img/Logo19nec.png" alt="Logo Niterói em Cena" class="max-h-6 max-w-[120px] w-auto h-auto object-contain" />
         </div>
     </nav>
 
@@ -37,8 +37,10 @@
         
         <!-- Cabeçalho do Festival -->
         <span class="text-amarelo-ouro font-bold tracking-widest text-sm uppercase block mb-2">Inscrições Abertas</span>
-        <h1 class="text-3xl md:text-5xl font-black text-bege-claro tracking-tight mb-6">
-            19° Niterói em Cena
+        
+        <!-- H1 substituído por Imagem do Logo Principal -->
+        <h1 class="mb-8 flex justify-center">
+            <img src="img/Logo19nec.png" alt="19° Niterói em Cena" class="w-full max-w-[320px] md:max-w-[450px] h-auto object-contain" />
         </h1>
 
         <!-- SEÇÃO DO TEXTO DIRETO -->
@@ -56,7 +58,7 @@
                 As inscrições para as duas mostras são GRATUITAS. Basta preencher o formulário desejado, clicando no botão abaixo.
             </p>
             <div class="pt-2 border-t border-verde-musgo/20 text-xs md:text-sm">
-                <p class="font-bold text-laranja-queimado uppercase tracking-wider mb-1">PRAZOS PARA SE INSCREVER:</p>
+                <p class="font-bold text-salmao uppercase tracking-wider mb-1">PRAZOS PARA SE INSCREVER:</p>
                 <p>• Mostra Cenas Curtas - até 03 de agosto</p>
                 <p>• Mostra Estudantil - até 17 de agosto</p>
             </div>
@@ -65,24 +67,24 @@
         <!-- Container das Duas Mostras com a Nova Identidade Visual -->
         <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             
-            <!-- Bloco Mostra Estudantil (Identidade Salmão / Laranja Queimado) -->
-            <div class="bg-azul-marinho border border-laranja-queimado/30 p-5 rounded-2xl flex flex-col gap-3">
-                <h2 class="text-base font-bold text-laranja-queimado uppercase tracking-wider mb-1">Mostra Estudantil</h2>
-                <a class="w-full bg-laranja-queimado hover:bg-amarelo-ouro text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer uppercase">
+            <!-- Bloco Mostra Estudantil (Identidade Salmão) -->
+            <div class="bg-azul-marinho border border-salmao/30 p-5 rounded-2xl flex flex-col gap-3">
+                <h2 class="text-base font-bold text-salmao uppercase tracking-wider mb-1">Mostra Estudantil</h2>
+                <a class="w-full bg-salmao hover:bg-amarelo-ouro text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer uppercase">
                     Edital
                 </a>
-                <a class="w-full border border-laranja-queimado text-laranja-queimado hover:bg-laranja-queimado hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all cursor-pointer uppercase">
+                <a class="w-full border border-salmao text-salmao hover:bg-salmao hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all cursor-pointer uppercase">
                     Inscreva-se aqui
                 </a>
             </div>
 
-            <!-- Bloco Mostra Cenas Curtas (Identidade Rosa / Rosa Coral) -->
-            <div class="bg-azul-marinho border border-rosa-coral/30 p-5 rounded-2xl flex flex-col gap-3">
-                <h2 class="text-base font-bold text-rosa-coral uppercase tracking-wider mb-1">Mostra Cenas Curtas</h2>
-                <a class="w-full bg-rosa-coral hover:bg-laranja-queimado text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer uppercase">
+            <!-- Bloco Mostra Cenas Curtas (Identidade Rosa) -->
+            <div class="bg-azul-marinho border border-rosa/30 p-5 rounded-2xl flex flex-col gap-3">
+                <h2 class="text-base font-bold text-rosa uppercase tracking-wider mb-1">Mostra Cenas Curtas</h2>
+                <a class="w-full bg-rosa hover:bg-salmao text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer uppercase">
                     Regulamento
                 </a>
-                <a class="w-full border border-rosa-coral text-rosa-coral hover:bg-rosa-coral hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all cursor-pointer uppercase">
+                <a class="w-full border border-rosa text-rosa hover:bg-rosa hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all cursor-pointer uppercase">
                     Inscreva-se aqui
                 </a>
             </div>
