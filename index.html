@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>19° Niterói em Cena</title>
-    <link rel="icon" type="image/svg+xml" href="img/Site01.svg">
+    <link rel="icon" type="image/svg+xml" href="img/Site 01.svg">
     
+    <!-- Última versão do Tailwind v4 via CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     
     <style type="text/tailwindcss">
@@ -20,54 +21,89 @@
           --color-bege-claro: #F7E7CE;
         }
 
-        /* Classe customizada para a Navbar */
+        /* Classe para a imagem de fundo na Navbar */
         .nav-custom {
-            background-image: url('img/elemento10nec180.png'); /* Substitua pelo seu arquivo */
+            background-image: url('img/SuaImagemDeFundo.png'); /* Substitua pelo nome do seu arquivo */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            /* Caso sua imagem seja muito clara, podemos adicionar uma camada escura */
-            /* background-color: #06616D; */ 
         }
     </style>
 </head>
 <body class="bg-azul-marinho text-bege-claro antialiased font-sans flex justify-center items-start min-h-screen p-4 pt-20">
 
-    <!-- ==================== BARRA FLUTUANTE ATUALIZADA ==================== -->
+    <!-- ==================== BARRA FLUTUANTE ==================== -->
     <nav class="nav-custom fixed top-4 left-1/2 -translate-x-1/2 w-[70%] h-8 border border-verde-musgo rounded-full grid grid-cols-3 px-4 shadow-lg z-50 overflow-hidden">
         <div></div>
         <div class="flex items-center justify-center h-full">
-            <img src="img/logo19necSolida 3.png" alt="Logo Niterói em Cena" class="max-h-5 w-auto object-contain" />
+            <img src="img/logo19necSolida 3.png" alt="Logo Niterói em Cena" class="max-h-6 max-w-[120px] w-auto h-auto object-contain" />
         </div>
         <div></div>
     </nav>
 
-    <!-- O restante do seu código permanece igual abaixo -->
+    <!-- ==================== SESSÃO ÚNICA DO FESTIVAL ==================== -->
     <main class="w-full max-w-4xl bg-bege-claro border-2 border-verde-musgo rounded-3xl p-6 md:p-10 shadow-2xl text-center mb-8">
+        
+        <!-- Cabeçalho do Festival -->
         <span class="text-amarelo-ouro font-bold tracking-widest text-sm uppercase block mb-2">Inscrições Abertas</span>
         
+        <!-- H1 substituído por Imagem do Logo Principal -->
         <h1 class="mb-8 flex justify-center">
             <img src="img/LOGO 1.png" alt="19° Niterói em Cena" class="w-full max-w-[320px] md:max-w-[450px] h-auto object-contain" />
         </h1>
 
+        <!-- SEÇÃO DO TEXTO DIRETO -->
         <div class="mb-8 text-left text-sm md:text-base text-bege-claro/90 bg-azul-marinho p-4 md:p-6 rounded-xl border border-verde-musgo/30 space-y-4">
-            <p>Estão abertas as inscrições para a MOSTRA ESTUDANTIL e para a MOSTRA CENAS CURTAS do 19° Niterói em Cena, que será realizado entre 11 e 27 de setembro de 2026.</p>
-            <p>A MOSTRA ESTUDANTIL ocorrerá no Centro Cultural Calby Peixoto, nos dias 15, 16 e 17 de setembro, nos turnos da manhã e tarde.</p>
-            <p>A MOSTRA CENAS CURTAS também ocorrerá no Centro Cultural Calby Peixoto, nos dias 22, 23 e 24 de setembro.</p>
-            <p class="font-semibold text-amarelo-ouro">As inscrições são GRATUITAS. Basta preencher o formulário desejado.</p>
+            <p>
+                Estão abertas as inscrições para a MOSTRA ESTUDANTIL e para a MOSTRA CENAS CURTAS do 19° Niterói em Cena, que será realizado entre 11 e 27 de setembro de 2026.
+            </p>
+            <p>
+                A MOSTRA ESTUDANTIL ocorrerá no Centro Cultural Calby Peixoto, nos dias 15, 16 e 17 de setembro, nos turnos da manhã e tarde. Podem participar escolas públicas e privadas do ensino básico e cursos livres de teatro do estado do Rio de Janeiro. Serão selecionadas, pelo menos, 70 cenas de até 8 minutos.
+            </p>
+            <p>
+                A MOSTRA CENAS CURTAS também ocorrerá no Centro Cultural Calby Peixoto, nos dias 22, 23 e 24 de setembro. Serão selecionadas 15 cenas. Cada uma receberá um cache de participação de R$ 2.000,00, além de concorrer ao Prêmio Júri Popular, que acrescentará R$ 2.000,00 ao valor do cache da cena premiada (baixe o Regulamento)
+            </p>
+            <p class="font-semibold text-amarelo-ouro">
+                As inscrições para as duas mostras são GRATUITAS. Basta preencher o formulário desejado, clicando no botão abaixo.
+            </p>
+            <div class="pt-2 border-t border-verde-musgo/20 text-xs md:text-sm">
+                <p class="font-bold text-salmao uppercase tracking-wider mb-1">PRAZOS PARA SE INSCREVER:</p>
+                <p>Mostra Cenas Curtas - até 03 de agosto</p>
+                <p>Mostra Estudantil - até 17 de agosto</p>
+            </div>
         </div>
 
+        <!-- Container das Duas Mostras com a Nova Identidade Visual -->
         <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            
+            <!-- Bloco Mostra Estudantil (Identidade Salmão) -->
             <div class="bg-azul-marinho border border-salmao/30 p-5 rounded-2xl flex flex-col gap-3 justify-center">
                 <h2 class="text-base font-bold text-salmao uppercase tracking-wider mb-1">Mostra Estudantil</h2>
-                <a href="#" class="w-full bg-salmao hover:bg-amarelo-ouro text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors text-center uppercase">Inscreva-se aqui</a>
+                
+                <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_KUnJuoe5wtxa2vMN4ho_9pxDnEuAQLNylwaL_axKRmir0w/viewform?usp=header"
+                class="w-full bg-salmao hover:bg-amarelo-ouro text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors text-center cursor-pointer uppercase">
+                    Inscreva-se aqui
+                </a>
             </div>
+
+            <!-- Bloco Mostra Cenas Curtas (Identidade Rosa) -->
             <div class="bg-azul-marinho border border-rosa/30 p-5 rounded-2xl flex flex-col gap-3">
                 <h2 class="text-base font-bold text-rosa uppercase tracking-wider mb-1">Mostra Cenas Curtas</h2>
-                <a class="w-full border border-rosa text-rosa hover:bg-rosa hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all text-center cursor-pointer uppercase">Regulamento</a>
-                <a href="#" class="w-full bg-rosa hover:bg-salmao text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors text-center uppercase">Inscreva-se aqui</a>
+                
+                <a class="w-full border border-rosa text-rosa hover:bg-rosa hover:text-azul-marinho font-medium text-xs py-2.5 px-4 rounded-xl transition-all text-center cursor-pointer uppercase">
+                    Regulamento
+                </a>
+                
+                <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSejcwYCQAaIGXqEBOy7rerKnjMHfDu9IyJm1MBQGr9I7SOPgw/viewform?usp=dialog"
+                class="w-full bg-rosa hover:bg-salmao text-bege-claro font-bold text-xs py-2.5 px-4 rounded-xl transition-colors text-center cursor-pointer uppercase">
+                    Inscreva-se aqui
+                </a>
             </div>
+
         </div>
+
     </main>
 
 </body>
